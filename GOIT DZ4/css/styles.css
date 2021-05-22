@@ -1,0 +1,582 @@
+:root{
+    --text-colorgre:#757575;
+    --text-colorbl:#212121;
+    --text-colorwh: #ffffff;
+    --hover-colorblu:#2196F3;
+    --focus-color:#188ce8;
+    --footer-color:#ffffff99;
+    --sect-colordbl:#2F303A;
+    --port-hedrgr:#F5F4FA;
+    --back--color:#2F303A;
+    --bord-head:#ECECEC;
+    --icon-colo:#AFB1B8;
+    --marg-cart:30px;
+    --text-logo:Raleway;   
+    --text-body:Roboto;
+}
+
+body{
+    font-family:var(--text-body), sans-serif ;
+    background:var(--text-colorwh);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+
+/* Общий сброс */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================== */
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    }
+
+
+/* ============================================== */
+
+
+/* Позиция шапки сайта */
+
+
+
+.links{
+    list-style: none;
+    color: var(--text-colorgre);
+}
+
+
+
+
+/* Шапка сайта flex box*/
+.header-title{
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    border-bottom: 1px solid var(--bord-head);
+}
+.header-title .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+  
+}
+.headlink{
+    margin-left: 93px;
+}
+.headlink .links:not(:first-child){
+    margin-left: 50px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+.contact .links:not(:first-child){
+    margin-left: 50px;
+}
+/* Шрифт шапки лого */
+
+.nav-header .logo{
+    font-family: var(--text-logo); 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--text-colorbl);
+    text-decoration: none;
+
+}
+.logo span{
+    color:var(--hover-colorblu);
+}
+/* шрифт шапки навигация */
+
+.hero .link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+.headlink .link
+{
+    color: var(--text-colorbl);
+}
+
+.headlink .link:hover,
+.headlink .link:focus
+{
+    color: var(--hover-colorblu);
+}
+
+.container .link.current{
+    color: var(--hover-colorblu);
+}
+
+/* шрифт шапки контакты */
+ .iconhead{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    /* color: var(--text-colorgre); */
+}
+
+.contact .link{
+    display: flex;
+    align-items: center;
+    color: var(--text-colorgre);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--hover-colorblu);
+    fill: var(--hover-colorblu);
+
+}
+
+
+/* позиция main */
+
+/* Order Flex */
+
+
+.order{
+   padding-top: 200px;
+   padding-bottom: 200px;
+   background-image:linear-gradient(
+    rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)),
+    url(../image/backimg.png);
+   background-size: cover;
+}
+
+.order .container{
+    width: 696px;
+    text-align: center;
+
+}
+
+
+.order .efect{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--text-colorwh);
+margin-bottom: 30px;
+
+
+}
+
+/* конопка заказа */
+.order .button{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+cursor: pointer;
+color: var(--text-colorwh);
+background-color:var(--hover-colorblu);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+
+padding: 10px 32px;
+}
+
+.order .button:hover,
+.order .button:focus{
+    background-color: var(--focus-color);
+    color:  var(--text-colorwh);
+}
+
+
+/* особености */
+.features{
+    padding: 94px 0;
+}
+
+.iconfeatures{
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--port-hedrgr);
+}
+.container .features-title{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+     margin-right: calc(-1 * var(--marg-cart));
+}
+
+
+.features-title .features-body{
+    flex-basis: calc(100% / 4 - var(--marg-cart));
+    margin-right: var(--marg-cart);
+}
+
+
+.features-body .feathero{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-colorbl);
+    font-family: var(--text-body);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+
+    margin-bottom: 10px;
+}
+
+
+.features-body{
+    line-height: 1.71;
+    color: var(--text-colorgre);
+}
+
+
+/* Чем мы занимаемся */
+
+.wedoing-title{
+    padding-bottom: 94px;
+}
+.container .wedoing{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    margin-left:calc(-1*var(--marg-cart));
+
+}
+.wedoing .links{
+    flex-basis: calc(100%/3 - var(--marg-cart));
+    margin-left: var(--marg-cart);
+
+}
+
+
+/* Наша команда */
+ .iconteam{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+    fill: var(--text-colorgre);
+}
+.card-pers .iconteam:not(:last-child){
+    margin-right: 10px;
+
+}
+.iconsvg{
+    width: 20px;
+    height: 20px;
+}
+
+ .iconteam:hover,
+ .iconteam:focus{
+    border-radius: 50%;
+    background-color: var(--hover-colorblu);
+    fill: var(--text-colorwh);
+}
+
+
+.team-main{
+    background-color: var(--port-hedrgr);
+    padding: 94px 0;
+
+}
+
+
+.team-title{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: calc(-1*var(--marg-cart));
+    
+
+   }
+   .team-title .team-body{
+       flex-basis: calc(100%/4 - var(--marg-cart));
+       margin-left: var(--marg-cart);
+
+   }
+   .team-body{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   }
+
+ .shead .capit{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--text-colorbl);
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+.card-pers{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.team-body .person-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--text-colorbl);
+    margin-bottom: 10px;
+    
+}
+
+.team-body .team-footer{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--text-colorgre);
+
+    margin-bottom: 16px;
+}
+
+/* Наши клиенты */
+.clients{
+    padding: 94px 0;
+}
+.container .client-body{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top:calc(-1 * 50px);
+    margin-left: calc(-1 * var(--marg-cart));
+}
+.client-body .client-title{
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    flex-basis: calc(100%/6 - var(--marg-cart));
+    margin-top: 50px;
+    margin-left: var(--marg-cart);
+
+    border: 1px solid var(--icon-colo);
+    border-radius: 4%;
+}
+.iconcli{
+    fill: var(--icon-colo);
+}
+
+.iconcom{
+    width: 106px;
+    height: 60px;
+}
+
+.iconcli .iconcom:hover{
+    fill:var(--hover-colorblu);
+}
+
+
+
+
+
+/* футер сайта */
+.footer-title .container{
+    display: flex;
+}
+
+.container .nav{
+margin-right: 70px;
+}
+
+.footer-title{
+    background-color:var(--text-colorbl);
+    padding: 60px 0 60px;
+}
+
+
+.container .footlogo{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-colorbl);
+    font-family: var(--text-logo); 
+    color: var(--text-colorwh);
+    text-decoration: none;
+
+    display: block;
+    margin-bottom: 20px;
+}
+
+.address .links:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.address .address-title{  
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--footer-color);
+    text-decoration: none;
+}
+.links .map{
+    color: var(--text-colorwh);
+}
+.container .join{
+    margin-top: 12px;
+}
+
+.join-head{
+    color: var(--text-colorwh);
+    font-family: var(--text-body);
+    font-style: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.join .iconfoot{
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+    fill: var(--text-colorgre);
+    background-color: #ffffff1a;
+    border-radius: 50%;
+
+}
+
+.join .iconfoot:not(:last-child){
+    margin-right: 10px;
+
+}
+.iconfoot .footsvg{
+    fill: var(--text-colorwh);
+}
+.join .iconfoot:hover,
+.join .iconfoot:focus{
+    background-color: var(--hover-colorblu);
+}
+
+
+/* COMPONENTS */
+/* что я могу сюда занести?? */
+/*  END COMPONENTS */
+
+/* PAGE PORTFOLIO MAIN */
+.section-portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container .filters{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+    
+}
+.radio .button{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+color: var(--text-colorbl);
+
+border-radius: 4px;
+cursor: pointer;
+background-color: var(--port-hedrgr);
+padding: 6px 22px;
+border: 0;
+}
+
+.filters .radio:not(:last-child){
+    margin-right: 8px;
+}
+
+.radio .button:hover,
+.radio .button:focus{
+    background-color: var(--focus-color) ;
+    color: var(--text-colorwh);
+}
+/* сетка карточки */
+ .container .portfolio-hero{
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     margin-top:calc(-1 * var(--marg-cart));
+     margin-left: calc(-1 * var(--marg-cart));
+ }
+ .portfolio-hero .portfotitle{
+     flex-basis: calc(100%/3 - var(--marg-cart));
+     margin-top: var(--marg-cart);
+     margin-left: var(--marg-cart);
+     cursor: pointer;
+     border: 1px solid #EEEEEE;
+ }
+
+ .portfolio-hero .portfotitle:hover,
+ .portfolio-hero .portfotitle:focus{
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
+    -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
+ }
+
+
+.portfolioname{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-colorbl);
+
+    margin-bottom: 4px;
+
+}
+.portfotitle .portfooter{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--text-colorgre);
+
+}
+
+.portfotitle .card-des {
+padding: 20px 24px;
+
+}
