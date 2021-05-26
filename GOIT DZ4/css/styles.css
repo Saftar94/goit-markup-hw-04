@@ -7,7 +7,6 @@
     --footer-color:#ffffff99;
     --sect-colordbl:#2F303A;
     --port-hedrgr:#F5F4FA;
-    --back--color:#2F303A;
     --bord-head:#ECECEC;
     --icon-colo:#AFB1B8;
     --marg-cart:30px;
@@ -243,7 +242,8 @@ padding: 10px 32px;
     padding: 94px 0;
 }
 
-.features-body .iconfeat{
+
+.iconfeat{
     display: flex;
     width: 270px;
     height: 120px;
@@ -428,7 +428,9 @@ padding: 10px 32px;
 .client-body .client-title{
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: calc(100%/6 - var(--marg-cart));
     margin-top: 50px;
     margin-left: var(--marg-cart);
@@ -443,10 +445,7 @@ padding: 10px 32px;
 }
 
 .iconcom{
-    width: 106px;
-    height: 60px;
     fill: var(--icon-colo);
-
 }
 
 .client-body .client-title:hover .iconcom,
@@ -461,7 +460,7 @@ padding: 10px 32px;
 .footer-title .container{
     display: flex;
     align-items: baseline;
-    background-color:var(--text-colorbl);
+    background-color:var(--sect-colordbl);
 
 }
 
@@ -470,7 +469,7 @@ margin-right: 70px;
 }
 
 .footer-title{
-    background-color:var(--text-colorbl);
+    background-color:var(--sect-colordbl);
     padding: 60px 0 60px;
 }
 
@@ -521,17 +520,19 @@ margin-right: 70px;
 
 }
 
-.icontitle{
+.iconbody{
     width: 44px;
     height: 44px;
-    padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: var(--text-colorgre);
     background-color: #ffffff1a;
     border-radius: 50%;
 
 }
-.icontitle:hover,
-.icontitle:focus{
+.iconbody:hover,
+.iconbody:focus{
     background-color: var(--hover-colorblu);
 }
 .footsvg{
@@ -586,8 +587,12 @@ border: 0;
 
 .radio .button:hover,
 .radio .button:focus{
-    background-color: var(--focus-color) ;
+    background-color: var(--hover-colorblu) ;
     color: var(--text-colorwh);
+    box-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* сетка карточки */
 
@@ -605,19 +610,19 @@ border: 0;
     cursor: pointer;
     border: 1px solid #EEEEEE;
  }
+
+ .portfotitle .portolink{
+     text-decoration: none;
+     display: block;
+ }
  
- .portfolio-hero .portfotitle:hover,
- .portfolio-hero .portfotitle:focus{
+ .portfolio-hero .portolink:hover,
+ .portfolio-hero .portolink:focus{
     box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
     -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
     -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.73);
  }
 
-
-
- .portfotitle .portolink{
-     text-decoration: none;
- }
 
 .portfolioname{
     font-weight: 700;
